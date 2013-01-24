@@ -1,179 +1,149 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Oseror</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Oseror</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :all %>
   <%= javascript_include_tag "jquery",'jquery.min' %>
   <%= csrf_meta_tag %>
-  <meta name="keywords" content="Custom Solutions, Website Engineering, knowledge Management, Collaboration and Search, Security and Identity, Business Intelligence, Professional Services, Strategy, Architecture &amp; Technology Selection, Subject Matter Expertise, Program Management, Creative Web Design &amp; User Experience, System Integration, Compliance Expertise, Testing &amp; Quality Assurance, Support Services, Application Support and Maintenance, Product Support and Maintenance, Hosting Services and Support, Fremont, California " />
-<meta name="description" content="eTouch Systems delivers enterprise-class Web 2.0 solutions and services to help business and organizations of any size unlock the value of the collective intelligence, insights, and creativity of the entire organization and turn it into competitive advantage. We offer comprehensive and powerful portfolio of products, solutions and services that makes it easy for employees, customers, and partners to contribute, collaborate, and communicate with impact. " />
-
-
-
+<!--[if IE 7]>
+<link href="css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--Sliding-->
+<!--<script type="text/javascript" src="js/lib/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/skins/tango/skin.css" />
 <script type="text/javascript">
-$(document).ready(function(){
-	var timer;
-	$('.small-text').css('display', 'none');
-	$('.small-hero-image').hover(function(){
-	$('.small-text',this).css('display', 'block').css('margin-top', '-58px');
-	$('.heroimage',this).css('opacity', '0.14');
-	},
-	function(){
-		$('.small-text').css('display', 'none');
-		$('.heroimage').css('opacity', '0.9');
-	})
-})
-
-$(document).ready(function () {
-	$('.menu li.topmenu').hover(
-        
-		function () {
-			//$('.menu li a').removeClass('selected');
-			$('ul:first', this).stop(true, true).slideDown(130);
-			$('li',this).addClass('selected');
-			$('ul:first li',this).removeClass('selected');
-
-		},
-		function () {
-			$('ul.sub-menu', this).css("display","none");
-			$('.menu > li').removeClass('selected');
-		});
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        vertical: true,
+        scroll: 2
+    });
 });
-	</script>
-
-<!-- Put the following javascript before the closing </head> tag. -->
-<script type="text/javascript">
-  (function() {
-    var cx = '009106585577107666789:4hkmfyokh30';
-    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+</script>-->
+<!--Sliding-->
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
 </head>
 <body>
-<!-- Header Container Starts here -->
-  <div id="headerContainer"><!-- InstanceBeginEditable name="EditRegion3" --><!-- #BeginLibraryItem "/library/common/header.lbi" --><div class="logo-navigation-container">
-  <!-- Logo Container Starts here -->
-  <div class="logo-container">
+<div id="wrapper">
+<!--HEADER START-->
+<div id="header-outer">
+	<div class="header-top-outer">
+    	<div class="header-top-inr">
+        	<ul class="social-media">
+            	<li>Follow us on:</li>
+                <li><a href="http://www.facebook.com" target="_blank" class="facebook" title="">Facebook</a></li>
+                <li><a href="http://twitter.com" target="_blank" class="twitter"  title="">Twitter</a></li>
+            </ul>
+            <ul class="top-links">
+            	<li><a href="about-us.html" title="About Us">About Us</a></li>
+                <li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
+            </ul>
+            <div class="spacer"></div>
+            <a href="homes" title="Home"><img src="images/logo.png" alt="Oserror" class="logo-sp" /></a>
+            <div class="mail-sp">
+            	<a href="mailto:support@oserror.com" class="mailto">support@oserror.com</a>
+                <span class="ph-no">+91 4887896548</span>
+            </div>
+            <!--Navigation-->
+            <div class="spacer"></div>
+            <ul class="nav">
+            	<li><a href="homes/index" title="Home"><img src="images/nav-home.jpg" alt="Home" /></a></li>
+                <li><a href="about-us.html" title="About Us"><span>About Us</span></a></li>
+                <li><a href="services.html" title="Services"><span>Services</span></a></li>
+                <li><a href="portfolio.html" title="Portfolio"><span>Portfolio</span></a></li>
+                <li><a href="about-us.html" title="Clients"><span>Clients</span></a></li>
+                <li><a href="about-us.html" title="Testimonials"><span>Testimonials</span></a></li>
+                <li><a href="about-us.html" title="Contact Us"><span>Contact Us</span></a></li>
+            </ul>
+            <!--/Navigation-->
 
-    <a href="index.html"><img src="../images/etouch-logo.png" alt="" title="Oseror"/></a> </div>
-  <!-- Logo Container Ends here -->
-  <!-- Navigaiton Container Starts here -->
-  <div class="navigation-container">
-    <div class="navigation-container"> <a href="../about_us/contact-us.html">Contact Us</a><span class="separator">|</span><a href="https://twitter.com/etouchsystems" target="_blank" title="Follow Us on Twitter" class="twitter-icon"></a><a href="http://www.linkedin.com/company/163702" target="_blank" class="linkedin-icon"></a> </div>
-    <div class="clear"></div>
-  </div>
-  <!-- Navigation Container Ends here -->
+         </div>
+    </div>
 </div>
-<!-- #EndLibraryItem --><!-- InstanceEndEditable -->
-    <!-- Menu Container Starts here --><!-- #BeginLibraryItem "/library/common/horz_navbar.lbi" --><div id="menuContainer">
-  <div class="menu-div">
-    <ul class="menu">
-      <li class="first topmenu" id="home"><a href="index.html">Home</a></li>
-      <li class="separator"></li>
-      <li id="services" class="topmenu"><a href="../services/index.html">Services</a>
-        <ul class="sub-menu">
-          <li class="top"></li>
-          <li class="shadow">
-            <ul>
-              <li><a href="../services/web_development.html">Web Development</a></li>
-              <li><a href="../services/design.html">Design</a></li>
-              <li><a href="../services/mobility.html">Mobility</a></li>
-              <li><a href="../services/test-engineering.html">Test Engineering</a></li>              
-              <li><a href="../services/outsourcing.html" class="no-border">Outsourcing</a> </li>
-            </ul>
-          </li>
-          <li class="bottom"></li>
-        </ul>
-      </li>
-      <li class="separator"></li>
-      <li id="product" class="topmenu"><a href="../products/samepage/index.html">Product</a>
-      	<!--<ul class="sub-menu">
-          <li class="top"></li>
-          <li class="shadow">
-            <ul>
-              <li><a href="../products/samepage/index.html" class="no-border">SamePage - Enterprise Wiki</a></li>
-            </ul>
-          </li>
-          <li class="bottom"></li>
-        </ul>-->
-      </li>
-      <li class="separator"></li>
-      <li id="customers" class="topmenu"><a href="../customers/index.html">Customers</a>
-      	<ul class="sub-menu">
-          <li class="top"></li>
-          <li class="shadow">
-            <ul>
-              <li><a href="../customers/index.html">Customer List</a></li>
-              <li><a href="../customers/case-studies/index.html" class="no-border">Case Studies</a></li>
-            </ul>
-          </li>
-          <li class="bottom"></li>
-        </ul>
-      </li>
-      <li class="separator"></li>
-      <li id="about_us" class="topmenu"><a href="../about_us/index.html">About Us</a>
-        <ul class="sub-menu">
-          <li class="top"></li>
-          <li class="shadow">
-            <ul>
-              <li><a href="../about_us/partners.html">Technology Alliances and Partnership</a></li>
-              <li><a href="../about_us/contact-us.html" class="no-border">Contact Us</a></li>
-            </ul>
-          </li>
-          <li class="bottom"></li>
-        </ul>
-       </li>
-      <li class="separator"></li>
-      <li id="career" class="topmenu"><a href="../careers/index.html">Careers</a></li>
-      <li class="separator"></li>
-    </ul>
-	<div class="search-container">
-<!-- Place this tag where you want the search box to render
-	<gcse:searchbox-only></gcse:searchbox-only>-->
+
+    <%= yield %>
+
+<div class="spacer"></div>
+<!--FOOTER-->
+<div id="footer">
+	<!--Top-->
+    <div class="footer-top-outer">
+    	<div class="footer-top-inr">
+              <div class="footer-top-lft">
+            	<ul>
+                	<li>Services</li>
+                    <li><a href="web-developement.html" title="Web Developement">Web Developement</a></li>
+                    <li><a href="mobility.html" title="Mobility">Mobility</a></li>
+                    <li><a href="outsourcing.html" title="Outsourcing">Outsourcing</a></li>
+                    <li><a href="design.html" title="Design">Design</a></li>
+                    <li><a href="test-enginnering.html" title="Test Enginnering">Test Enginnering</a></li>
+                </ul>
+
+                <ul>
+                	<li>Product</li>
+                    <li><a href="#" title="">Lorem Ipsum</a></li>
+                    <li><a href="#" title="">Lorem Ipsum</a></li>
+                    <li><a href="#" title="">Lorem Ipsum</a></li>
+                    <li><a href="#" title="">Lorem Ipsum</a></li>
+                    <li><a href="#" title="">Lorem Ipsum</a></li>
+                </ul>
+
+                <ul>
+                	<li>Application Developement</li>
+                    <li><a href="cms.html" title="CMS">CMS</a></li>
+                    <li><a href="ruby-on-rails.html" title="Ruby on Rails">Ruby on Rails</a></li>
+                    <li><a href="facebook-apps.html" title="Facebook Apps">Facebook Apps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-top-rgt">
+            	<ul class="footer-contact">
+                	<li class="mail">Email: <a href="mailto:support@oseror.com" title="">support@oseror.com</a></li>
+                    <li class="phone">Phone:+91 33 412565469</li>
+                </ul>
+                <a href="#" title="Online Support"><img src="images/clip-online-suport.png" alt="" class="f-rgt" /></a>
+                <div class="payment-option">
+                	<ul>
+                    	<li>WE ACCEPT : </li>
+                        <li><img src="images/paypal.png" alt="Paypal" /></li>
+                        <li><img src="images/hdfc.png" alt="HDFC" /></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
     </div>
-  </div>
+    <!--/Top-->
+    <!--Bottom-->
+    <div class="footer-botm-outer">
+    	<div class="footer-botm-inr">
+        	<p class="copyight">&copy; 2013, Oseror, All right reserved</p>
+            <ul class="foot-links">
+            	<li><a href="#" title="Home">Home</a></li>
+                <li>|</li>
+                <li><a href="#" title="About Us">About Us</a></li>
+                <li>|</li>
+                <li><a href="#" title="Services">Contact us</a></li>
+                <li>|</li>
+                <li><a href="<%= terms_homes_path %>" title="Terms of Use">Terms of Use</a></li>
+                <li>|</li>
+                <li><a href="homes/privacy" title="Privacy Statement">Privacy Statement</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--/Bottom-->
+
+
 </div>
-<!-- #EndLibraryItem --><!-- Menu Container Ends here -->
-  </div>
-  <!-- Header Container Ends here -->
-<%= yield %>
-<div class="footer-container">
-    <div class="left">
-      <h3>Services</h3>
-      <ul>
-        <li><a href="../services/web-development.html">Web Development</a></li>
-        <li class="second-list"><a href="../services/design.html">Design</a></li>
-        <li><a href="../services/mobility.html">Mobility </a></li>
-        <li class="second-list"><a href="../services/test-engineering.html">Test Engineering</a></li>
-        <li class="second-list"><a href="../services/outsourcing.html">Outsourcing</a></li>
-      </ul>
-    </div>
-    <div class="vertical-separetor"></div>
-    <div class="middle">
-      <h3>Product</h3>
-      <!--<ul>
-        <li><a href="../products/samepage/index.html">SamePage - An Enterprise Wiki</a></li>
-        <li><a href="http://support.etouch.net/cm/wiki/Support%20Home.wiki/home/home.html" target="_blank">SamePage Support</a></li>
-      </ul>-->
-    </div>
-		 <div class="vertical-separetor"></div>
-    <div class="right">
-      <h3>About Us</h3>
-      <ul>
-        <li><a href="../about_us/contact-us.html">Contact Us</a></li>
-		<li><a href="sitemap.html">Sitemap</a></li>
-      </ul>
-    </div>
-    <div class="clear"></div>
-    <div class="horizontal-separetor"></div>
-    <div class="footer-bottom">
-      <div class="left">Copyright 2013 oseror | <a href="homes/terms">Terms of Use</a> | <a href="homes/privacy">Privacy Statement</a></div>
-      <div class="clear"></div>
-    </div>
-  </div>
+<!--/FOOTER-->
+
+</div>
+
 </body>
 </html>
