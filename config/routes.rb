@@ -1,7 +1,11 @@
 Oseror::Application.routes.draw do
+  resources :contacts
+
+  get "company/index"
+
   resources :services do
     collection do
-       get "web_development"
+       get "web_development","outsourcing"
 
   get "design"
 
@@ -14,7 +18,7 @@ Oseror::Application.routes.draw do
    
     resources :homes do
       collection do
-        get 'terms', 'privacy'
+        get 'terms', 'privacy','portfolio','testimonial'
       end
     end
 
