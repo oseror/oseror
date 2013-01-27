@@ -5,7 +5,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :phone
       t.string :mobile
       t.string :email
-      t.varchar :comments
+      t.text :comments
       t.string :service_type
 
       t.timestamps
