@@ -4,10 +4,10 @@ menu1[1]='<a href="#">Vision and Mission</a>'
 
 //Contents for menu 2, and so on
 var menu2=new Array()
-menu2[0]='<a href="#">Web Developement</a>'
-menu2[1]='<a href="#">Mobility </a>'
-menu2[2]='<a href="#">Outsourcing</a>'
-menu2[3]='<a href="#">Design</a>'
+menu2[0]='<a href="/services/web_development">Web Developement</a>'
+menu2[1]='<a href="/services/mobility">Mobility </a>'
+menu2[2]='<a href="/services/outsourcing">Outsourcing</a>'
+menu2[3]='<a href="/services/design">Design</a>'
 menu2[4]='<a href="#">Test Enginnering</a>'
 		
 var menuwidth='165px' //default menu width
